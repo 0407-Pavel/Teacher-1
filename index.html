@@ -3,11 +3,12 @@
  <head>
    <title></title>
    <meta charset="utf-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
    <link rel="stylesheet" href="./css/teacher.css">
  </head>   
  <body>
      <!--why choose us-->
-     <section class="choice_area"> 
+   <!--  <section class="choice_area"> 
          <h2 class="choice_title">Почему нас выбирают</h2>
          <ul class="choice_list">
              <li class="choice_number">01<p>Обучение в малых командах</p></li>
@@ -17,12 +18,26 @@
              <li class="choice_number">05<p>Прогамма курса соответствует требованиям МОН Украины</p></li>
              <li class="choice_number">06<p>Набор команд по уровням знаний</p></li>
          </ul>
-     </section>
+     </section> -->
 
      <!--teacher-->
      <section class="teacher_area">
         <h2 class="teacher_title">Преподаватель</h2>
-        <img class="teacher_img" src="" alt="woman in black shirt" width="243" height="306">
+         <picture class="teacher_picture_img">
+            <source srcset="./images-teacher/teacher-desktop.webp 1x, ./images-teacher/teacher-desktop@2x.webp 2x" 
+            media="(min-width: 1200px)" type="image/webp">
+            <source srcset="./images-teacher/teacher-desktop.jpg 1x, ./images-teacher/teacher-desktop@2x.jpg 2x" 
+            media="(min-width: 1200px)">
+            <source srcset="./images-teacher/teacher-tablet.webp 1x, ./images-teacher/teacher-tablet@2x.webp 2x" 
+            media="(min-width: 768px)" type="image/webp">
+            <source srcset="./images-teacher/teacher-tablet.jpg 1x, ./images-teacher/teacher-tablet@2x.jpg 2x" 
+            media="(min-width: 768px)">
+            <source srcset="./images-teacher/teacher-mobile.webp 1x, ./images-teacher/teacher-mobile@2x.webp 2x" 
+            media="(min-width: 320px)" type="image/webp">
+            <source srcset="./images-teacher/teacher-mobile.jpg 1x, ./images-teacher/teacher-mobile@2x.jpg 2x" 
+            media="(min-width: 320px)"> 
+        <img class="teacher_img"  src="./images-teacher/teacher-mobile.jpg" alt="woman in black shirt">
+        </picture>
         <h2 class="teacher_name">Елена Морева</h2>
         <hr>
         <ul class="teacher_list">
